@@ -29,19 +29,17 @@ public class UserResource {
 	
 	@Autowired
 	private UserService service;
-
-	@GetMapping
-	public ResponseEntity<Page<UserDTO>> findAll(Pageable pageable) {
-		
-		Page<UserDTO> list = service.findAllPaged(pageable);	
-		
-		return ResponseEntity.ok().body(list);
-	}
 	
 	@GetMapping(value = "/{id}")
 	public ResponseEntity<UserDTO> findById(@PathVariable Long id) {
 		UserDTO dto = service.findById(id);		
 		return ResponseEntity.ok().body(dto);
+	}
+
+	@GetMapping
+	public ResponseEntity<Page<UserDTO>> findAll(Pageable pageable) {
+		Page<UserDTO> list = service.findAllPaged(pageable);	
+		return ResponseEntity.ok().body(list);
 	}
 	
 	@PostMapping

@@ -17,7 +17,7 @@ const Navbar = () => {
           aria-controls="dscatalog-navbar"
           aria-expanded="false"
           aria-label="Toggle navigation"
-        >
+          >
           <span className="navbar-toggler-icon"></span>
         </button>
 

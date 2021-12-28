@@ -51,7 +51,21 @@
 
 @media (min-width: 576px){
     .login-card {
-        padding: 28px;
+        padding: 45px;
+      }
+      
+}
+
+@media (min-width: 1200px){
+    .login-card {
+        padding: 5px;
+      }
+      
+}
+
+@media (min-width: 1400px){
+    .login-card {
+        padding: 45px;
       }
       
 }

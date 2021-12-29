@@ -9,7 +9,7 @@ const ButtonIcon = ({text} : Props) => {
     <div className="btn-container">
       <button className="btn btn-primary">
           <h6>{text}</h6>
-        </button>
+      </button>
       <div className="btn-icon-container">
         <ArrowIcon />
       </div>
